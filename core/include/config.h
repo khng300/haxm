@@ -68,7 +68,7 @@ struct config_t {
 
 #define HAX_MAX_VCPUS 16
 
-#ifdef HAX_PLATFORM_NETBSD
+#if defined (HAX_PLATFORM_NETBSD) || defined (HAX_PLATFORM_FREEBSD)
 // TODO: Handle 64 VMs
 #define HAX_MAX_VMS 8
 #else

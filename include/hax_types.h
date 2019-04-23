@@ -82,6 +82,10 @@
 #elif defined(__NetBSD__)
 #define HAX_PLATFORM_NETBSD
 #include "netbsd/hax_types_netbsd.h"
+// FreeBSD
+#elif defined(__FreeBSD__)
+#define HAX_PLATFORM_FREEBSD
+#include "freebsd/hax_types_freebsd.h"
 // Windows
 #elif defined(_WIN32)
 #define HAX_PLATFORM_WINDOWS

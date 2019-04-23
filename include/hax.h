@@ -213,6 +213,9 @@ static inline unsigned char *hax_page_va(struct hax_page *page)
 #ifdef HAX_PLATFORM_LINUX
 #include "linux/hax_linux.h"
 #endif
+#ifdef HAX_PLATFORM_FREEBSD
+#include "freebsd/hax_freebsd.h"
+#endif
 #ifdef HAX_PLATFORM_NETBSD
 #include "netbsd/hax_netbsd.h"
 #endif
